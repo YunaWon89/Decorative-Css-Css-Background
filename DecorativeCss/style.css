@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fdfdfd;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main-section {
+    background-color: #432da1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.main-section__title {
+    margin-bottom: 15px;
+    color: lightsalmon;
+}
+
+.example-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+
+.example-box {
+    background-color: rgb(219, 116, 116);
+    color: #f8f5f5;
+    padding: 40px 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.shadow-basic{
+    box-shadow: 0px 4px 8px
+    lightsalmon;
+}
+.shadow-blur{
+     box-shadow: 15px 15px 20px
+    lightsalmon;
+}
+.shadow-multiple {
+    box-shadow:
+    0px 4px 8px rgb(160, 241, 29),
+    0px 8px 16px lightcoral,
+    0px 16px 32px rgb(78, 25, 47),
+    0px 32px 64px rgb(223, 90, 90);
+}
+
+.shadow-basic-text{ 
+    text-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.5) ;
+}
+.shadow-glow{
+    text-shadow: 0 0 5px rgba(121, 4, 95, 0.5), 
+    0 0 5px rgba(22, 53, 100, 0.8), 
+    0 0 10px rgba(255,0,0,0.6),
+    0 0 15px rgba(226, 223, 19, 0.4), 
+    0 0 20px rgba(109, 209, 15, 0.2);
+}
+
+.border-radius {
+    border-radius: 25px 60px 25px 60px;
+}
+
+.border-image {
+    border: 10px solid;
+    border-image: linear-gradient(45deg, #ff6ec4, #7873f5) 1;
+}
+
+.outline-effect {
+    outline: 10px solid #ff6ec4;
+    outline-offset: 10px;
+}
+
+.blur-filter{
+filter: blur(5px);
+}
+.translate {
+    transform: translate(10px, 20px);
+}
+.rotate{
+    transform: rotate(45deg);
+}
+.scale{
+    transform: scale(1.2);
+}
+.skew{
+    transform: skew(10deg, 10deg);
+}
+
+.translate-rotate{
+    transform: translate(10px, 20px) rotate(45deg)
+}
+.scale-rotate{
+    transform: scale(1.2)  rotate(180deg);
+}
+
+.rotate-x:hover{
+    transition: transform 1s ease-in;
+transform: rotateX(150deg);
+}
+.rotate-y1{
+transform: rotate(150deg);
+}
+.perspective-basic{
+transform: perspective(100px) rotateX(45deg);
+}
+
+.point-center{
+    transform-origin: center;
+    transform: rotate(45deg);
+}
+.point-left{
+    transform-origin: left;
+    transform: rotate(45deg);
+}
+.point-right{
+    transform-origin: right;
+    transform: rotate(45deg);
+}
+
+.hover-scale:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+.hover-rotate:hover {
+    transition: transform 1s ease-in;
+    transform: rotate(180deg);
+}
+.hover-3D:hover {
+    transition: transform 1s ease-out;
+    transform: perspective(100px) rotateX(50deg);
+}
