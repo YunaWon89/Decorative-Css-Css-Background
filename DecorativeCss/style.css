@@ -141,3 +141,79 @@ transform: perspective(100px) rotateX(45deg);
     transition: transform 1s ease-out;
     transform: perspective(100px) rotateX(50deg);
 }
+.transition-basic{
+transition: all 1s ease;
+}
+.transition-basic:hover{
+    background: linear-gradient(45deg, #c6f216, #1f3dc3);
+    transform: scale(1.3);
+}
+.transition-delay{
+transition: all 0.2s ease-in 5s;
+}
+.transition-delay:hover{
+    background: linear-gradient(45deg, #c6f216, #1f3dc3);
+    transform: translateY(-10px);
+}
+.transition-timing{
+transition: all 1s ease-in-out;
+}
+.transition-timing:hover{
+    background: linear-gradient(45deg, #c6f216, #1f3dc3);
+    transform: rotate(360deg) scale(1.3);
+}
+
+.animation-bounce{
+animation: boUnCe 1s infinite;
+}
+
+@keyframes boUnCe{
+    0%{
+        transform: translateY(0);}
+    50%{
+    transform: translateY(-20px);   
+        }
+100%{
+transform: translateY(0);
+        }
+    }
+.animation-pulse{
+animation: PulSe 1s infinite;
+}
+@keyframes PulSe{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+.animation-spin{
+animation: SpiN 3s linear infinite;
+}
+@keyframes SpiN{
+    0%{
+        transform: rotate(0deg);}
+        100%{
+            transform: rotate(360deg)
+        }
+        }
+
+        .opacity-transition{
+            transition: opacity 1s transform ease-in-out;
+        }
+        .opacity-transition:hover{
+            opacity: 0.5;
+            transform: translateY(-10%);
+        }
+
+        .color-transition{
+            transition: color 1s  ease;
+        }
+        .color-transition:hover{
+            color: black;
+        }
+        .size-transition:hover{
+            font-size: 30px;
+        }
+        
